@@ -118,8 +118,6 @@ namespace ForecastProd
             Excel.Trendline newTrendline = trendlines.Add(Excel.XlTrendlineType.xlPower, 2, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true, true, Type.Missing);
             newTrendline.Select();
 
-            
-
             chart.Legend.Delete();
 
             series.XValues = ObjWorkSheet.get_Range("E7", "E26");
